@@ -17,16 +17,16 @@ var totalAyamPenyetHarga;
 var totalEsJerukHarga;
 var totalEsTehHarga;
 
-function tambahMakanan(jenisMakanan) {
+function NambahMakanan(jenisMakanan) {
     switch (jenisMakanan) {
-        case "siHitamManis":
+        case "iniPecelLele":
             var currentTotal = jumlahPecelLele.innerHTML;
             currentTotal = parseInt(currentTotal);
             currentTotal++;
             jumlahPecelLele.innerHTML = currentTotal;
             totalPecelLele.innerHTML = currentTotal;
             break;
-        case "periStroberi":
+        case "iniAyamPenyet":
             var currentTotal = jumlahAyamPenyet.innerHTML;
             currentTotal = parseInt(currentTotal);
             currentTotal++;
@@ -41,7 +41,7 @@ function tambahMakanan(jenisMakanan) {
 
 function PenguranganMakanan(jenisMakanan) {
     switch (jenisMakanan) {
-        case "siHitamManis":
+        case "iniPecelLele":
             var currentTotal = jumlahPecelLele.innerHTML;
             currentTotal = parseInt(currentTotal);
 
@@ -54,7 +54,7 @@ function PenguranganMakanan(jenisMakanan) {
             jumlahPecelLele.innerHTML = currentTotal;
             totalPecelLele.innerHTML = currentTotal;
             break;
-        case "periStroberi":
+        case "iniAyamPenyet":
             var currentTotal = jumlahAyamPenyet.innerHTML;
             currentTotal = parseInt(currentTotal);
 
@@ -73,16 +73,16 @@ function PenguranganMakanan(jenisMakanan) {
     hitungTotalBelanja();
 }
 
-function tambahMinuman(jenisMinuman) {
+function NambahMinuman(jenisMinuman) {
     switch (jenisMinuman) {
-        case "bobakuDanBobamu":
+        case "iniEsJeruk":
             var currentTotal = jumlahEsJeruk.innerHTML;
             currentTotal = parseInt(currentTotal);
             currentTotal++;
             jumlahEsJeruk.innerHTML = currentTotal;
             totalEsJeruk.innerHTML = currentTotal;
             break;
-        case "esKelapaMesrah":
+        case "iniEsTeh":
             var currentTotal = jumlahEsTeh.innerHTML;
             currentTotal = parseInt(currentTotal);
             currentTotal++;
@@ -97,7 +97,7 @@ function tambahMinuman(jenisMinuman) {
 
 function PenguranganMinuman(jenisMinuman) {
     switch (jenisMinuman) {
-        case "bobakuDanBobamu":
+        case "iniEsJeruk":
             var currentTotal = jumlahEsJeruk.innerHTML;
             currentTotal = parseInt(currentTotal);
 
@@ -110,7 +110,7 @@ function PenguranganMinuman(jenisMinuman) {
             jumlahEsJeruk.innerHTML = currentTotal;
             totalEsJeruk.innerHTML = currentTotal;
             break;
-        case "esKelapaMesrah":
+        case "iniEsTeh":
             var currentTotal = jumlahEsTeh.innerHTML;
             currentTotal = parseInt(currentTotal);
 
