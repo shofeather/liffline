@@ -136,7 +136,7 @@ function registerButtonHandlers() {
 
     // Button Jajan
     document.getElementById('button_jajan').addEventListener('click', function () {
-        var struk = jajan();
+        var struk = checkoutCO();
 
         liff.sendMessages([{
             'type': 'text',
@@ -159,7 +159,7 @@ function registerButtonHandlers() {
             }
         }else {
             liff.openWindow({
-                url: 'https://sarang-jajan-v1.herokuapp.com/', // Isi dengan Endpoint URL aplikasi web Anda
+                url: 'https://liffpecellele.herokuapp.com/', // Isi dengan Endpoint URL aplikasi web Anda
                 external: true
             });
         }
