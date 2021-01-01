@@ -138,18 +138,18 @@ function hitungTotalBelanja() {
     totalHargaMakanan.innerHTML = totalPecelLeleHarga + totalAyamPenyetHarga;
     totalHargaMinuman.innerHTML = totalEsJerukHarga + totalEsTehHarga;
 
-    statusButtonJajan();
+    statusButtonCM();
 }
 
-function jajan() {
+function checkoutCO() {
     var namaUser = document.getElementById("card_nama_user");
     var strukBelanja = "Hai, " + namaUser.innerHTML + "\n\n" +
         "Terimakasih telah memesan makanan dan minuman di Sarang Jajan! \n" +
         "Berikut adalah rincian pesanan anda: \n\n" +
-        totalPecelLele.innerHTML + " item Si Hitam Manis: Rp. " + totalPecelLeleHarga + "\n" +
-        totalAyamPenyet.innerHTML + " item Peri Stroberi: Rp. " + totalAyamPenyetHarga + "\n" +
-        totalEsJeruk.innerHTML + " item Bobaku dan Bobamu: Rp. " + totalEsJerukHarga + "\n" +
-        totalEsTeh.innerHTML + " item Es Kelapa Mesrah: Rp. " + totalEsTehHarga + "\n\n" +
+        totalPecelLele.innerHTML + " item Pecel Lele: Rp. " + totalPecelLeleHarga + "\n" +
+        totalAyamPenyet.innerHTML + " item Ayam Penyet: Rp. " + totalAyamPenyetHarga + "\n" +
+        totalEsJeruk.innerHTML + " item Es Jeruk: Rp. " + totalEsJerukHarga + "\n" +
+        totalEsTeh.innerHTML + " item Es Teh: Rp. " + totalEsTehHarga + "\n\n" +
         "Maka,\n" +
         "Total harga makanan: Rp. " + totalHargaMakanan.innerHTML + "\n" +
         "Total harga minuman: Rp. " + totalHargaMinuman.innerHTML + "\n\n" +
@@ -158,15 +158,15 @@ function jajan() {
     return strukBelanja;
 }
 
-function statusButtonJajan() {
+function statusButtonCM() {
     if (
         totalPecelLeleHarga == 0 &&
         totalAyamPenyetHarga == 0 &&
         totalEsJerukHarga == 0 &&
         totalEsTehHarga == 0
     ) {
-        document.getElementById("button_jajan").disabled = true;
+        document.getElementById("button_checkout").disabled = true;
     } else {
-        document.getElementById("button_jajan").disabled = false;
+        document.getElementById("button_checkout").disabled = false;
     }
 }
