@@ -165,8 +165,8 @@ function statusButtonCM() {
         totalEsJerukHarga == 0 &&
         totalEsTehHarga == 0
     ) {
-        document.getElementById("button_checkout").disabled = true;
+        document.getElementById("button_CO").disabled = true;
     } else {
-        document.getElementById("button_checkout").disabled = false;
+        document.getElementById("button_CO").disabled = false;
     }
 }
