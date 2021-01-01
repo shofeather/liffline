@@ -130,10 +130,10 @@ function PenguranganMinuman(jenisMinuman) {
 }
 
 function hitungTotalBelanja() {
-    totalPecelLeleHarga = parseInt(totalPecelLele.innerHTML) * 3500;
-    totalAyamPenyetHarga = parseInt(totalAyamPenyet.innerHTML) * 4000;
-    totalEsJerukHarga = parseInt(totalEsJeruk.innerHTML) * 9500;
-    totalEsTehHarga = parseInt(totalEsTeh.innerHTML) * 11500;
+    totalPecelLeleHarga = parseInt(totalPecelLele.innerHTML) * 15000;
+    totalAyamPenyetHarga = parseInt(totalAyamPenyet.innerHTML) * 20000;
+    totalEsJerukHarga = parseInt(totalEsJeruk.innerHTML) * 5000;
+    totalEsTehHarga = parseInt(totalEsTeh.innerHTML) * 4000;
 
     totalHargaMakanan.innerHTML = totalPecelLeleHarga + totalAyamPenyetHarga;
     totalHargaMinuman.innerHTML = totalEsJerukHarga + totalEsTehHarga;
