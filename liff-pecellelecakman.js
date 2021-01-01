@@ -3,7 +3,7 @@ window.onload = function () {
     const defaultLiffId = "1655422704-4LN9Wxw7";   // change the default LIFF value if you are not using a node server
 
     // DO NOT CHANGE THIS
-    let myLiffId = "";
+    let myLiffId = "1655422704-4LN9Wxw7";
 
     // if node is used, fetch the environment variable and pass it to the LIFF method
     // otherwise, pass defaultLiffId
@@ -135,7 +135,7 @@ function registerButtonHandlers() {
     });
 
     // Button Jajan
-    document.getElementById('button_jajan').addEventListener('click', function () {
+    document.getElementById('button_CO').addEventListener('click', function () {
         var struk = checkoutCO();
 
         liff.sendMessages([{
