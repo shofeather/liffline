@@ -144,7 +144,7 @@ function hitungTotalBelanja() {
 function checkoutCO() {
     var namaUser = document.getElementById("card_nama_user");
     var strukBelanja = "Hai, " + namaUser.innerHTML + "\n\n" +
-        "Terimakasih telah memesan makanan dan minuman di Sarang Jajan! \n" +
+        "Terimakasih telah memesan makanan dan minuman di PECEL LELE CAK MAN \n" +
         "Berikut adalah rincian pesanan anda: \n\n" +
         totalPecelLele.innerHTML + " item Pecel Lele: Rp. " + totalPecelLeleHarga + "\n" +
         totalAyamPenyet.innerHTML + " item Ayam Penyet: Rp. " + totalAyamPenyetHarga + "\n" +
